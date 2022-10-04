@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#color-palette {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.color {
+  border: 1px solid;
+  inline-size: 25px;
+  display: inline-block;
+}

@@ -20,8 +20,8 @@ body {
 }
 
 .pixel {
-  background-color: white;
-border: 1px solid;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid;
 }
 
 .color {
@@ -30,7 +30,6 @@ border: 1px solid;
   display: inline-block;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: black;
 }
 
 #title {

@@ -22,8 +22,9 @@
       
     })
     
-    let color = document.getElementsByClassName('color')[0];
+    let blackColor = document.getElementsByClassName('color')[0];
     color.style.backgroundColor = "black";
+    blackColor.classList = 'color selected';
     }
 
 
@@ -70,9 +71,7 @@
      
     generateColors();
    
-    reset.addEventListener("click", function(){
-        
-    })  
+
 
     
 

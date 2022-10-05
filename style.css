@@ -55,11 +55,11 @@ body {
 }
 
 #pixel-board {
-  --size: 4;
+  --generateBoard: 4;
   height: 218px;
   display: grid;
-  grid-template-columns: repeat(var(--size), 1fr);
-  grid-template-rows: repeat(var(--size), 1fr);
+  grid-template-columns: repeat(var(--generateBoard), 1fr);
+  grid-template-rows: repeat(var(--generateBoard), 1fr);
   gap: 3px;
   background-color: black;
   width: 218px;
@@ -71,4 +71,17 @@ body {
   height: 35px;
   padding: 0 1em;
 
+}
+
+#generate-board {
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 8px;
+  border-radius: 3px;
+  background-color: rgb(214, 214, 76);
+  height: 21px;
+  line-height: 16px;
+  padding: 4px 8px;
+  box-shadow: 5px 5px 5px #eee;
+  cursor: pointer;
 }

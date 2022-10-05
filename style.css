@@ -60,7 +60,7 @@ body {
   height: 15px;
 }
 
-.container {
+#pixel-board {
   --size: 4;
   height: 800px;
   display: grid;

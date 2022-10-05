@@ -27,7 +27,7 @@
     }
 
 
-    const container = document.querySelector('.container');
+    const container = document.querySelector('#pixel-board');
     const sizeE1 = document.querySelector('.size');
     const size = sizeE1.value;
     const colorInside = document.querySelector('.color'); 

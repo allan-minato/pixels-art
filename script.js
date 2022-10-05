@@ -19,6 +19,7 @@
             generateColors()
         }    
 
+        localStorage.setItem('saveColors', hexCode);
       
     })
     

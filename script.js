@@ -18,7 +18,7 @@
         colorPalette.forEach((color) =>{
         let hexCode = "#" +  Math.random().toString(16).substring(2, 8);
         color.style.backgroundColor = hexCode;    
-        if(color === hexCode){        
+        if(color.style.backgroundColor === hexCode){        
             generateColors()
         }    
 
@@ -46,14 +46,11 @@
                 div.classList.add('pixel')
                 container.appendChild(div)
                 reset.addEventListener("click", function(){
-                if(div.style.backgroundColor != 'rgb(255, 255, 255)'){
+            if(div.style.backgroundColor != 'rgb(255, 255, 255)'){
                 div.style.backgroundColor = 'rgb(255, 255, 255)'
-                }               
-                
-               
-                   
+            }                    
                 }
-            )}
+                )}
             }
 
     generateColors();
@@ -69,9 +66,7 @@
         }
       }
     )
-    
-
-    
+       
     container.addEventListener('click', function(paintPixel) {
         let selectedColor = document.querySelector('.selected');
         let paint = getComputedStyle(selectedColor).backgroundColor;
@@ -83,10 +78,6 @@
     
 
 
-// pixel.addEventListener('click', function(event){
-//     pixel.style.backgroundColor = color2.style.backgroundColor;
-// })
-    
 
 
 

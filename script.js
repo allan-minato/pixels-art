@@ -19,7 +19,6 @@
             generateColors()
         }    
 
-     return color;
       
     })
     
@@ -44,17 +43,17 @@
                 div.classList.add('pixel')
                 container.appendChild(div)
                 reset.addEventListener("click", function(){
-                    div.style.backgroundColor = 'rgb(255, 255, 255)'
-                div.addEventListener('click', function(){
-                    if(!draw) return
-                    div.style.backgroundColor = 'red'
-                })
+                    if(div.style.backgroundColor != 'rgb(255, 255, 255)'){
+                        div.style.backgroundColor = 'rgb(255, 255, 255)'
+                    }
+                
                       
             }
-                )}
-                if(color === hexCode){     
-                    generateColors();    
-                    }    
+                
+            
+            )}
+               
+               
         
             }
 

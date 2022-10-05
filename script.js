@@ -1,4 +1,3 @@
-
     let color = document.getElementsByClassName('color')[0];
     let color2 = document.getElementsByClassName('color')[1];
     let color3 = document.getElementsByClassName('color')[2];
@@ -11,30 +10,72 @@
     color4.style.backgroundColor = "brown";
 
     const colorPalette = document.querySelectorAll(".color");
-    
+
     function generateColors() {
         colorPalette.forEach((color) =>{
         let hexCode = "#" +  Math.random().toString(16).substring(2, 8);
         color.style.backgroundColor = hexCode;    
-        
-        if(color === hexCode){     
-        generateColors();    
+        if(color === hexCode){        
+            generateColors()
         }    
+
+     return color;
+      
     })
+    
     let color = document.getElementsByClassName('color')[0];
     color.style.backgroundColor = "black";
     }
-    
+
+
+    const container = document.querySelector('.container');
+    const sizeE1 = document.querySelector('.size');
+    const size = sizeE1.value;
+    const colorInside = document.querySelector('.color'); 
+    const reset = document.querySelector('#clear-board')
+
+    let draw = false;
+        function populate(size) {
+            container.style.setProperty('--size', size)
+            
+            
+            for (let index = 0; index < size * size; index += 1){
+                const div = document.createElement('div')
+                div.classList.add('pixel')
+                container.appendChild(div)
+                reset.addEventListener("click", function(){
+                    div.style.backgroundColor = 'rgb(255, 255, 255)'
+                div.addEventListener('click', function(){
+                    if(!draw) return
+                    div.style.backgroundColor = 'red'
+                })
+                      
+            }
+                )}
+                if(color === hexCode){     
+                    generateColors();    
+                    }    
+        
+            }
+
+        populate(5)
+
+        window.addEventListener("mousedown", function(){
+            draw = false
+        })
+
+        window.addEventListener("mouseup", function(){
+            draw = true
+        })
+
+     
     generateColors();
-    
+   
+    reset.addEventListener("click", function(){
+        
+    })  
 
     
-
-
-
-
-
-
 
 
 

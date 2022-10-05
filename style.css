@@ -20,7 +20,7 @@ body {
 }
 
 .pixel {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border: 1px solid;
 }
 
@@ -61,13 +61,13 @@ body {
   grid-template-columns: repeat(var(--size), 1fr);
   grid-template-rows: repeat(var(--size), 1fr);
   gap: 3px;
-  background-color:black;
+  background-color: black;
   width: 218px;
   padding: 3px;
   border: 1px, solid;
 }
 
-.clear-board, input{
+.clear-board input {
   height: 35px;
   padding: 0 1em;
 

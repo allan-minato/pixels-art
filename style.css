@@ -55,7 +55,6 @@ body {
 }
 
 #pixel-board {
-  --generateBoard: 4;
   height: 218px;
   display: grid;
   grid-template-columns: repeat(var(--generateBoard), 1fr);
@@ -73,7 +72,7 @@ body {
 
 }
 
-#generate-board {
+/* #generate-board {
   font-size: 10px;
   font-weight: 600;
   margin-left: 8px;
@@ -84,4 +83,4 @@ body {
   padding: 4px 8px;
   box-shadow: 5px 5px 5px #eee;
   cursor: pointer;
-}
+} */
